@@ -12,6 +12,9 @@ perceptually calibrated MEF structural similarity (MEF-SSIM) index over a databa
 Across an independent set of test sequences, we find that the optimized MEF-Net achieves consistent improvement in visual
 quality for most sequences, and runs 10 to 1000 times faster than state-of-the-art methods.
 
+## MEF-Net Framework
+![framework](./images/framework/framework.png)
+
 ## Prerequisites
 The release version of MEF-Net was implemented and has been tested in Ubuntu 16.04 with
 - Python = 3.6.2
@@ -22,7 +25,7 @@ The release version of MEF-Net was implemented and has been tested in Ubuntu 16.
 ## Dataset
 Please refer to the respective papers mentioned in the manuscript. We do not directly provide the large-scale dataset for MEF-Net.
 We collect more than 1000 exposure sequence, and screening the local and non-aligned global motion sequences. 
-Here, we provide only one exposure sequence "Corridor" to test training code.
+Here, we provide only one exposure sequence "Corridor" to test training code. 
 
 ## Train
 We recommend to use **GPU** to train the method:
@@ -31,13 +34,13 @@ python Main.py --train True --use_cuda True
 ```
 
 ## Test
-On **GPU**:
+Run the following command to test the exposure sequence "Corridor" with the default settings in MEF-Net on **GPU-mode**:
 ```
-python Main.py --train False --use_cuda True --ckpt MEF_release.pt
+python Main.py --train False --use_cuda True --ckpt MEFNet_release.pt
 ``` 
-On **CPU**:
+on **CPU-mode**:
 ```
-python Main.py --train False --use_cuda False --ckpt MEF_release.pt
+python Main.py --train False --use_cuda False --ckpt MEFNet_release.pt
 ``` 
 
 ## Reference
@@ -46,8 +49,7 @@ python Main.py --train False --use_cuda False --ckpt MEF_release.pt
 *IEEE Transactions on Image Processing*, vol. 24, no. 11, pp. 3345–3356, Nov. 2015.
 - K. Ma, Z. Duanmu, H. Yeganeh, and Z. Wang, “Multi-exposure image fusion by optimizing a structural similarity index,” 
 *IEEE Transactions on Computational Imaging*, vol. 4, no. 1, pp. 60–72, Mar. 2018.
-- K. R. Prabhakar, V. S. Srikar, and R. V. Babu, “Deepfuse: A deep unsupervised approach for exposure fusion with extreme exposure image
-pairs,” in *IEEE International Conference on Computer Vision*, 2017, pp. 4724–4732.
+- H. Wu, S. Zheng, J. Zhang, and K. Huang, “Fast end-to-end trainable guided filter,” in *IEEE Conference on Computer Vision and Pattern Recognition*, 2018, pp. 1838–1847.
 
 ## Citation
 ```
@@ -57,3 +59,7 @@ author={Kede, Ma and Zhengfang, Duanmu and Hanwei, Zhu and Yuming, Fang and Zhou
 journal={IEEE Transactions on Image Processing},
 year={to appear, 2019}
 }
+```
+
+## Acknowledgment
+We want to thank Huikai Wu for his implementation of [Fast End-to-End Trainable Guided Filter](https://github.com/wuhuikai/DeepGuidedFilter) in Pytorch.
