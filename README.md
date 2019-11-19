@@ -62,4 +62,4 @@ year={to appear, 2019}
 ```
 
 ## Acknowledgment
-We want to thank Huikai Wu for his implementation of [Fast End-to-End Trainable Guided Filter](https://github.com/wuhuikai/DeepGuidedFilter) in Pytorch.
+The authors would like to thank Huikai Wu for his implementation of [Fast End-to-End Trainable Guided Filter](https://github.com/wuhuikai/DeepGuidedFilter) in Pytorch.
