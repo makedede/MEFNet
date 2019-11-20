@@ -4,7 +4,7 @@
 ## Introduction
 This repository contains reference code for the paper [Deep Guided Learning for Fast Multi-Exposure Image Fusion](https://ece.uwaterloo.ca/~k29ma/papers/19_TIP_MEF-Net.pdf),
 [Kede Ma](https://kedema.org/), [Zhengfang Duanmu](https://ece.uwaterloo.ca/~zduanmu/), Hanwei Zhu, [Yuming Fang](http://sim.jxufe.cn/JDMKL/ymfang.html), 
-[Zhou Wang](https://ece.uwaterloo.ca/~z70wang/), *IEEE Transactions on Image Processing*, to appear, 2019.
+[Zhou Wang](https://ece.uwaterloo.ca/~z70wang/), *IEEE Transactions on Image Processing*, 2019.
 
 We propose a fast multi-exposure image fusion (MEF) method, namely MEF-Net, for static image sequences
 of arbitrary spatial resolution and exposure number. We first feed a low-resolution version of the input sequence to a fully
