@@ -24,7 +24,7 @@ The release version of MEF-Net was implemented and has been tested on Ubuntu 16.
 
 
 ## Dataset
-We do not have the right to distribute the large-scale dataset used for training and testing MEF-Net. Please kindly refer to the respective papers mentioned in the manuscript.
+We do not have the right to distribute the large-scale dataset used for training and testing MEF-Net. Please kindly refer to the respective authors acknowledged in the manuscript.
 
 ## Train
 We provide only one exposure sequence "Corridor" to test the training code. We recommend to use **GPU**:
