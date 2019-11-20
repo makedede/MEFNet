@@ -1,4 +1,6 @@
 # Deep Guided Learning for Fast Multi-Exposure Image Fusion
+
+![framework](./images/framework/framework.png)
 This is the implementation for [Deep Guided Learning for Fast Multi-Exposure Image Fusion](https://ece.uwaterloo.ca/~k29ma/papers/19_TIP_MEF-Net.pdf),
 [Kede Ma](https://kedema.org/), [Zhengfang Duanmu](https://ece.uwaterloo.ca/~zduanmu/), Hanwei Zhu, [Yuming Fang](http://sim.jxufe.cn/JDMKL/ymfang.html), 
 [Zhou Wang](https://ece.uwaterloo.ca/~z07wang/), *IEEE Transactions on Image Processing*, to appear, 2019.
@@ -12,8 +14,7 @@ perceptually calibrated MEF structural similarity (MEF-SSIM) index over a databa
 Across an independent set of test sequences, we find that the optimized MEF-Net achieves consistent improvement in visual
 quality for most sequences, and runs 10 to 1000 times faster than state-of-the-art methods.
 
-## MEF-Net Framework
-![framework](./images/framework/framework.png)
+
 
 ## Prerequisites
 The release version of MEF-Net was implemented and has been tested in Ubuntu 16.04 with
