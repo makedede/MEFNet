@@ -1,11 +1,11 @@
 # Deep Guided Learning for Fast Multi-Exposure Image Fusion
-
 ![framework](./images/framework/framework.png)
-This is the implementation for [Deep Guided Learning for Fast Multi-Exposure Image Fusion](https://ece.uwaterloo.ca/~k29ma/papers/19_TIP_MEF-Net.pdf),
+
+## Introduction
+This repository contains reference code for the paper [Deep Guided Learning for Fast Multi-Exposure Image Fusion](https://ece.uwaterloo.ca/~k29ma/papers/19_TIP_MEF-Net.pdf),
 [Kede Ma](https://kedema.org/), [Zhengfang Duanmu](https://ece.uwaterloo.ca/~zduanmu/), Hanwei Zhu, [Yuming Fang](http://sim.jxufe.cn/JDMKL/ymfang.html), 
 [Zhou Wang](https://ece.uwaterloo.ca/~z07wang/), *IEEE Transactions on Image Processing*, to appear, 2019.
 
-## Abstract
 We propose a fast multi-exposure image fusion (MEF) method, namely MEF-Net, for static image sequences
 of arbitrary spatial resolution and exposure number. We first feed a low-resolution version of the input sequence to a fully
 convolutional network for weight map prediction. We then jointly upsample the weight maps using a guided filter. The final
@@ -17,25 +17,23 @@ quality for most sequences, and runs 10 to 1000 times faster than state-of-the-a
 
 
 ## Prerequisites
-The release version of MEF-Net was implemented and has been tested in Ubuntu 16.04 with
+The release version of MEF-Net was implemented and has been tested on Ubuntu 16.04 with
 - Python = 3.6.2
-- pytorch = 0.4.1
+- PyTorch = 0.4.1
 - torchvision = 0.2.1 
 
 
 ## Dataset
-Please refer to the respective papers mentioned in the manuscript. We do not directly provide the large-scale dataset for MEF-Net.
-We collect more than 1000 exposure sequence, and screening the local and non-aligned global motion sequences. 
-Here, we provide only one exposure sequence "Corridor" to test training code. 
+We do not have the right to distribute the large-scale dataset used for training and teseting MEF-Net. Please kindly refer to the respective papers mentioned in the manuscript.
 
 ## Train
-We recommend to use **GPU** to train the method:
+We provide only one exposure sequence "Corridor" to test the training code. We recommend to use **GPU**:
 ```
 python Main.py --train True --use_cuda True
 ```
 
 ## Test
-Run the following command to test the exposure sequence "Corridor" with the default settings in MEF-Net on **GPU-mode**:
+To test the exposure sequence "Corridor" with the default settings of MEF-Net on **GPU-mode**:
 ```
 python Main.py --train False --use_cuda True --ckpt MEFNet_release.pt
 ``` 
@@ -63,4 +61,4 @@ year={to appear, 2019}
 ```
 
 ## Acknowledgment
-The authors would like to thank Huikai Wu for his implementation of [Fast End-to-End Trainable Guided Filter](https://github.com/wuhuikai/DeepGuidedFilter) in Pytorch.
+The authors would like to thank Huikai Wu for his implementation of [Fast End-to-End Trainable Guided Filter](https://github.com/wuhuikai/DeepGuidedFilter) in PyTorch.
