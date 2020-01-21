@@ -52,11 +52,11 @@ python Main.py --train False --use_cuda False --ckpt MEFNet_release.pt
 
 ## Citation
 ```
-@aritcle{ma2019mefnet,
+@article{ma2019mefnet,
 title={Deep Guided Learning for Fast Multi-Exposure Image Fusion},
-author={Kede, Ma and Zhengfang, Duanmu and Hanwei, Zhu and Yuming, Fang and Zhou, Wang},
+author={Ma, Kede and Duanmu, Zhengfang and Zhu, Hanwei and Fang, Yuming and Wang, Zhou},
 journal={IEEE Transactions on Image Processing},
-year={to appear, 2019}
+year={to appear, 2020}
 }
 ```
 
